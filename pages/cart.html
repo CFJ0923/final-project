@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" href="../assets/Css/style.css">
+    <link rel="stylesheet" href="../assets/Css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 頁首 -->
+    <nav>
+        <ul class="mode2">
+            <!-- 分類 -->
+            <li>
+                <div class="dropdown">
+                    <a href="#" class="head">分類</a>
+                    <div class="dropdown-content">
+                        <a href="product interface.html#pi-1">上身</a>
+                        <a href="product interface.html#pi-2">下身</a>
+                        <a href="product interface.html#pi-3">套裝</a>
+                        <a href="product interface.html#pi-4">配件</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 搜尋 -->
+            <li>
+                <div class="search">
+                    <img src="../assets/Images/magnifier.png" alt="search">
+                    <input type="text" name="search" placeholder="搜尋">
+                </div>
+            </li>
+            <!-- 商標 -->
+            <li>
+                <div class="logopic">
+                    <a href="../index.html">
+                        <img src="../assets/Images/Jiyikawa.png" alt="logo">
+                    </a>
+                </div>
+            </li>
+            <!-- 會員 -->
+            <li>
+                <a href="register.html" class="head">
+                    <img src="../assets/Images/membericon.png" alt="會員"> 會員
+                </a>
+            </li>
+
+            <!-- 購物車 -->
+            <li>
+                <a href="cart.html" class="head">
+                    <img src="../assets/Images/shopping cart.png" alt="購物車"> 購物車
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 主導航欄 (新品、熱銷商品、店家介紹、組員介紹) -->
+    <nav class="main-nav">
+        <div class="container d-flex justify-content-around align-items-center">
+            <a href="new-arrivals.html" class="nav-link">新品</a>
+            <a href="bestsellers.html" class="nav-link">熱銷商品</a>
+            <a href="about-store.html" class="nav-link">店家介紹</a>
+            <a href="team-intro.html" class="nav-link">組員介紹</a>
+        </div>
+    </nav>
+
+    <section class="cart">
+        <div class="cart-container">
+            <h1>購物車</h1>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>商品名稱</th>
+                        <th>尺寸</th>
+                        <th>數量</th>
+                        <th>單價</th>
+                        <th>小計</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- 動態生成商品 -->
+                </tbody>
+            </table>
+            <div class="cart-summary">
+                <p>總計金額: <span id="total-price">0$</span></p>
+                <button class="confirm-purchase" id="confirm-purchase">確定購買</button>
+            </div>
+            
+
+        </div>
+    </section>
+
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- 第一部分：選單連結 -->
+                <section class="footer-section footer-links">
+                    <a href="../pages/about-store.html" class="footer-link" target="_self">關於我們</a>
+                    <a href="../pages/about-store.html#policy" class="footer-link" target="_self">退換貨規則</a>
+                    <a href="../pages/about-store.html#policy" class="footer-link" target="_self">運費寄送</a>
+                    <a href="../pages/privacy.html" class="footer-link" target="_self">隱私權政策</a>
+                </section>
+                <!-- 第二部分：社群連結 -->
+                <section class="footer-section footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=100000895142823&locale=zh_TW" class="footer-social-link" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/fu_05_jie_18/" class="footer-social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:changfujie9@gmail.com" class="footer-social-link" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </section>
+                <!-- 第三部分：版權資訊 -->
+                <section class="footer-section footer-copyright">
+                    <span>&copy;2024 &nbsp;</span>
+                    <span>技術提供：吉衣卡哇</span>
+                </section>
+            </div>
+        </div>
+    </footer>    
+
+    <div id="snow-container"></div>
+    <script src="../assets/js/snow.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/swiper.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/product interface.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吉衣卡哇首頁</title>
+    <link rel="stylesheet" href="assets/Css/style.css">
+    <link rel="stylesheet" href="assets/Css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 頁首 -->
+    <nav>
+        <ul class="mode2">
+            <!-- 分類 -->
+            <li>
+                <div class="dropdown">
+                    <a href="#" class="head">分類</a>
+                    <div class="dropdown-content">
+                        <a href="pages/product interface.html#pi-1">上身</a>
+                        <a href="pages/product interface.html#pi-2">下身</a>
+                        <a href="pages/product interface.html#pi-3">套裝</a>
+                        <a href="pages/product interface.html#pi-4">配件</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 搜尋 -->
+            <li>
+                <div class="search">
+                    <img src="assets/Images/magnifier.png" alt="search">
+                    <input type="text" name="search" placeholder="搜尋">
+                </div>
+            </li>
+            <!-- 商標 -->
+                    <li>
+                        <div class="logopic">
+                            <a href="index.html">
+                                <img src="assets/Images/Jiyikawa.png" alt="logo">
+                            </a>
+                        </div>
+                    </li>
+            <!-- 會員 -->
+            <li>
+                <a href="pages/register.html" class="head">
+                    <img src="assets/Images/membericon.png" alt="會員"> 會員
+                </a>
+            </li>
+
+            <!-- 購物車 -->
+            <li>
+                <a href="pages/cart.html" class="head">
+                    <img src="assets/Images/shopping cart.png" alt="購物車"> 購物車
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 主導航欄 (新品、熱銷商品、店家介紹、組員介紹) -->
+    <nav class="main-nav">
+        <div class="container d-flex justify-content-around align-items-center">
+            <a href="pages/new-arrivals.html" class="nav-link">新品</a>
+            <a href="pages/bestsellers.html" class="nav-link">熱銷商品</a>
+            <a href="pages/about-store.html" class="nav-link">店家介紹</a>
+            <a href="pages/team-intro.html" class="nav-link">組員介紹</a>
+        </div>
+    </nav>
+
+    <!-- 主頁內容 -->
+    <main>
+        <section class="swiper"> <!-- swiper class 會被 new Swiper('.swiper' 使用 -->
+            <div class="swiper-wrapper"> <!-- 讓Swiper知道要輪播的內容位置必須為 swiper-wrapper -->
+                <div class="swiper-slide"><a href="pages/about-store.html"><img src="assets/Images/img1.png"></a></div>
+                <div class="swiper-slide"><a href="pages/new-arrivals.html"><img src="assets/Images/img2.png"></a></div>
+                <div class="swiper-slide"><a href="pages/product interface.html"><img src="assets/Images/img3.png"></a></div>
+            </div>
+            <div class="swiper-pagination"></div> <!-- 分頁按鈕 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+
+        <section class="category-buttons">
+            <h2>選擇商品類別</h2>
+            <div class="button-row">
+                <a href="pages/product interface.html#pi-1" class="category-button upper-body">
+                    <img src="assets/Images/Hometop.png" alt="上身" class="homeimg">
+                </a>
+                <a href="pages/product interface.html#pi-2" class="category-button lower-body">
+                    <img src="assets/Images/Homebottom.png" alt="下身" class="homeimg">
+                </a>
+            </div>
+            <div class="button-row">
+                <a href="pages/product interface.html#pi-3" class="category-button set">
+                    <img src="assets/Images/Homepackage.png" alt="套裝" class="homeimg">
+                </a>
+                <a href="pages/product interface.html#pi-4" class="category-button accessories">
+                    <img src="assets/Images/HomeAccessories.png" alt="配件" class="homeimg">
+                </a>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- 第一部分：選單連結 -->
+                <section class="footer-section footer-links">
+                    <a href="pages/about-store.html" class="footer-link" target="_self">關於我們</a>
+                    <a href="pages/about-store.html#policy" class="footer-link" target="_self">退換貨規則</a>
+                    <a href="pages/about-store.html#policy" class="footer-link" target="_self">運費寄送</a>
+                    <a href="pages/privacy.html" class="footer-link" target="_self">隱私權政策</a>
+                </section>
+                <!-- 第二部分：社群連結 -->
+                <section class="footer-section footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=100000895142823&locale=zh_TW" class="footer-social-link" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/fu_05_jie_18/" class="footer-social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="changfujie9@gmail.com" class="footer-social-link" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </section>
+                <!-- 第三部分：版權資訊 -->
+                <section class="footer-section footer-copyright">
+                    <span>&copy;2024 &nbsp;</span>
+                    <span>技術提供：吉衣卡哇</span>
+                </section>
+            </div>
+        </div>
+    </footer>    
+
+    <div id="snow-container"></div>
+    <script src="assets/js/snow.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+</body>
+</html>

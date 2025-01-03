@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/Css/product.css">
+</head>
+<body>
+    <!-- 頁首 -->
+    <nav id="Classification">
+        <ul class="mode2">
+            <!-- 分類 -->
+            <li>
+                <div class="dropdown">
+                    <a href="#" class="head">分類</a>
+                    <div class="dropdown-content">
+                        <a href="product interface.html#pi-1">上身</a>
+                        <a href="product interface.html#pi-2">下身</a>
+                        <a href="product interface.html#pi-3">套裝</a>
+                        <a href="product interface.html#pi-4">配件</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 搜尋 -->
+            <li>
+                <div class="search">
+                    <img src="../assets/Images/magnifier.png" alt="search">
+                    <input type="text" name="search" placeholder="搜尋">
+                </div>
+            </li>
+            <!-- 商標 -->
+            <li>
+                <div class="logopic">
+                    <a href="../index.html">
+                        <img src="../assets/Images/Jiyikawa.png" alt="logo">
+                    </a>
+                </div>
+            </li>
+            <!-- 會員 -->
+            <li>
+                <a href="register.html" class="head">
+                    <img src="../assets/Images/membericon.png" alt="會員"> 會員
+                </a>
+            </li>
+
+            <!-- 購物車 -->
+            <li>
+                <a href="cart.html" class="head">
+                    <img src="../assets/Images/shopping cart.png" alt="購物車"> 購物車
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+    <!-- 主導航欄 (新品、熱銷商品、店家介紹、組員介紹) -->
+    <nav class="main-nav">
+        <div class="container d-flex justify-content-around align-items-center">
+            <a href="new-arrivals.html" class="nav-link">新品</a>
+            <a href="bestsellers.html" class="nav-link">熱銷商品</a>
+            <a href="about-store.html" class="nav-link">店家介紹</a>
+            <a href="team-intro.html" class="nav-link">組員介紹</a>
+        </div>
+    </nav>
+
+    <div class="container1">
+        <div class="product-card" data-id="11">
+            <div class="product-image">
+                <img src="../assets/Images/bottom5.jpg" alt="Product 1">
+            </div>
+            <div class="product-info">
+                <h2>雪花抱抱冰裙</h2>
+                <p>雪花抱抱冰裙為紙材質能防止液體滲透並增加耐用度。<br>無毒無糖符合食品安全標準，適合冬天和夏天。<br>是環保型材質，不想穿也可以回收分解。</p>
+                <div class="size-options">
+                    <button class="size-button">S</button>
+                    <button class="size-button">M</button>
+                    <button class="size-button">L</button>
+                </div>
+                <div class="quantity">
+                    <button class="decrement">-</button>
+                    <input type="text" value="0">
+                    <button class="increment">+</button>
+                </div>
+                <button class="add-to-cart">加入購物車</button>
+                
+            </div>
+            <div class="price">700$</div>
+        </div>
+
+        <div class="card product-reviews">
+            <h3>顧客評論</h3>
+            <div id="review-list"></div>
+        
+            <div class="review-form">
+                <div class="star-rating">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <textarea id="review-text" placeholder="請留下您的評論..."></textarea>
+                <button id="submit-review">提交評論</button>
+            </div>
+        </div>                   
+    </div>
+    
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- 第一部分：選單連結 -->
+                <section class="footer-section footer-links">
+                    <a href="../pages/about-store.html" class="footer-link" target="_self">關於我們</a>
+                    <a href="../pages/about-store.html#policy" class="footer-link" target="_self">退換貨規則</a>
+                    <a href="../pages/about-store.html#policy" class="footer-link" target="_self">運費寄送</a>
+                    <a href="../pages/privacy.html" class="footer-link" target="_self">隱私權政策</a>
+                </section>
+                <!-- 第二部分：社群連結 -->
+                <section class="footer-section footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=100000895142823&locale=zh_TW" class="footer-social-link" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/fu_05_jie_18/" class="footer-social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="changfujie9@gmail.com" class="footer-social-link" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </section>
+                <!-- 第三部分：版權資訊 -->
+                <section class="footer-section footer-copyright">
+                    <span>&copy;2024 &nbsp;</span>
+                    <span>技術提供：吉衣卡哇</span>
+                </section>
+            </div>
+        </div>
+    </footer>      
+
+    <!-- 浮動按鈕 -->
+    <button class="float-btn-totop btn" id="btnToTop">
+        <div class="icon-btn"></div> 
+        <a href="#Classification">返回頂部</a>
+    </button>
+    <button class="float-btn-cart btn">
+        <div class="icon-btn"></div> 
+        <a href="cart.html" class="head">購物車</a>
+    </button>
+
+    <div id="snow-container"></div>
+    <script src="../assets/js/snow.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/swiper.js"></script>
+    <script src="../assets/js/product interface.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/Comment.js"></script>
+</body>
+</html>

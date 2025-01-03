@@ -1,0 +1,145 @@
+/* Banner區域 */
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+
+/* 類別選項按鈕樣式 */
+.category-buttons {
+    padding: 20px;
+    text-align: center;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category-button {
+    width: 45%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.category-button:hover {
+    transform: scale(1.05);
+}
+
+.category-button span {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* 個別按鈕背景圖片設置 */
+.upper-body {
+    background-image: url('images/upper-body.jpg'); /* 上身的背景圖片 */
+}
+
+.lower-body {
+    background-image: url('images/lower-body.jpg'); /* 下身的背景圖片 */
+}
+
+.set {
+    background-image: url('images/set.jpg'); /* 套裝的背景圖片 */
+}
+
+.accessories {
+    background-image: url('images/accessories.jpg'); /* 配件的背景圖片 */
+}
+
+
+.button-row {
+    display: flex;
+    justify-content: center; /* 居中排列图片 */
+    margin-top: 100px;
+}
+
+.homeimg {
+    width: 70%; /* 缩小到原始宽度的 50% */
+    height: auto; /* 根据宽度自动调整高度，保持比例 */
+    border-radius: 20px; /* 圆角效果 */
+    transition: transform 0.3s ease; /* 鼠标悬停动画效果 */
+}
+
+.homeimg:hover {
+    transform: scale(1.1); /* 悬停时放大 */
+}
+
+h2 {
+    margin: 20px;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: auto; /* 確保圖片寬度按原始比例 */
+    height: auto; /* 確保圖片高度按原始比例 */
+    max-width: 100%; /* 避免圖片過大超出容器 */
+    max-height: 100%; /* 避免圖片過大超出容器 */
+}
+
+
+/* 輪播底部按鈕 */
+.swiper-pagination {
+    position: absolute;
+    bottom: 20px; /* 距離底部 */
+    left: 0;
+    right: 0;
+    text-align: center; /* 居中 */
+}
+
+.swiper-pagination-bullet {
+    width: 12px; /* 圓點寬度 */
+    height: 12px; /* 圓點高度 */
+    margin: 0 4px;
+    background-color: black; /* 圓點顏色統一為黑色 */
+    opacity: 0.7;
+    border-radius: 50%; /* 圓形 */
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgb(252, 206, 107)!important; /* 當前頁的顏色 */
+    opacity: 1;
+    transform: scale(1.2); /* 放大效果 */
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    color: rgb(34, 34, 34)!important; /* 使用 !important 確保樣式生效 */
+    background: rgba(245, 222, 179, 0.795) !important;
+    width: 60px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+}
+
+.swiper .swiper-button-prev:hover,
+.swiper .swiper-button-next:hover {
+    background: rgba(245, 222, 179, 0.548) !important; /* 確保懸停效果生效 */
+}

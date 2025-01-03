@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品總覽</title>
+    <link rel="stylesheet" href="../assets/Css/product interface.css">
+    <link rel="stylesheet" href="../assets/Css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- 頁首 -->
+<nav id="Classification">
+    <ul class="mode2">
+        <!-- 分類 -->
+        <li>
+            <div class="dropdown">
+                <a href="#" class="head">分類</a>
+                <div class="dropdown-content">
+                    <a href="#pi-1">上身</a>
+                    <a href="#pi-2">下身</a>
+                    <a href="#pi-3">套裝</a>
+                    <a href="#pi-4">配件</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- 搜尋 -->
+        <li>
+            <div class="search">
+                <img src="../assets/Images/magnifier.png" alt="search">
+                <input type="text" name="search" placeholder="搜尋">
+            </div>
+        </li>
+        <!-- 商標 -->
+        <li>
+            <div class="logopic">
+                <a href="../index.html">
+                    <img src="../assets/Images/Jiyikawa.png" alt="logo">
+                </a>
+            </div>
+        </li>
+        <!-- 會員 -->
+        <li>
+            <a href="register.html" class="head">
+                <img src="../assets/Images/membericon.png" alt="會員"> 會員
+            </a>
+        </li>
+
+        <!-- 購物車 -->
+        <li>
+            <a href="cart.html" class="head">
+                <img src="../assets/Images/shopping cart.png" alt="購物車"> 購物車
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!-- 主導航欄 (新品、熱銷商品、店家介紹、組員介紹) -->
+<nav class="main-nav">
+    <div class="container d-flex justify-content-around align-items-center">
+        <a href="new-arrivals.html" class="nav-link">新品</a>
+        <a href="bestsellers.html" class="nav-link">熱銷商品</a>
+        <a href="about-store.html" class="nav-link">店家介紹</a>
+        <a href="team-intro.html" class="nav-link">組員介紹</a>
+    </div>
+</nav>
+    <!--上身-->
+    <div class="container1">
+        <!--套裝區塊-->
+        <h1 id="pi-1">"上身" 專區</h1>
+        <p class="description">JIYIKAWA 一件搞定，從吉有型！<br>衣櫃裡翻來覆去總少一件衣服，<br>穿搭零壓力，吉衣教你怎麼買!</p>
+        <!--卡片區塊-->
+        <div class="product-grid">
+            <div class="product-card" data-id="1">
+                <div class="product-image">
+                    <a href="product1.html" class="pd">
+                        <img src="../assets/Images/top1.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>吉吉復吉吉</h2>
+                    <p>吉吉復吉吉，吉衣當戶織。<br>吉衣為您設計一款保暖毛衣，嚴冬不怕冷，讓舒適隨身相伴！<br>暖在心頭，時尚不離身。一件毛衣，撐起你的冬天！讓你不再嘆息</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                    
+                </div>
+                <div class="price">550$</div>
+                <div class="tooltip">顧客評價:★★★★☆<br>吉友:商品是不錯啦!，但我缺少的是模特爾的臉QQ</div>
+            </div>
+
+            <!--卡片區塊-->
+            <div class="product-card" data-id="2">
+                <div class="product-image">
+                    <a href="product2.html" class="pd">
+                        <img src="../assets/Images/top2.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>阿爾卑斯山的少女沒有推輪椅</h2>
+                    <p>幫您在成為少女的路上，展現自信與優雅，簡約時尚的剪裁。<br>適合各種風格搭配，無論日常外出還是正式場合，都能輕鬆駕馭。<br>支援機洗且不易起毛球。</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                    
+                </div>
+                <div class="price">888$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>海獺:如果也贈送更多小禮物我會更愛!</div>
+            </div>
+
+            <div class="product-card" data-id="3">
+                <div class="product-image">
+                    <a href="product3.html" class="pd">
+                        <img src="../assets/Images/top3.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>明太子</h2>
+                    <p>喜歡明太子嗎?嚴選優質原料，打造鹹香適中的極致衣感。<br>這款透視風格的服裝，搭配小可愛內搭，打造性感與俏皮兼具的穿搭體驗！</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">650$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>chisheby:nice try diddy</div>
+            </div>
+
+            <div class="product-card" data-id="4">
+                <div class="product-image">
+                    <a href="product4.html" class="pd">
+                        <img src="../assets/Images/top4.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>阿拉伯沙西米</h2>
+                    <p>以沙西米的綠色為主色，融合阿拉伯風情與經典美味，為您的衣櫃增添一抹時尚感。<br>展現自然與健康的視覺效果，令人一見難忘。</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                    
+                </div>
+                <div class="price">420$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>人魚公主:穿上真的就 自己嚇自己了</div>
+            </div>
+
+            <div class="product-card" data-id="5">
+                <div class="product-image">
+                    <a href="product5.html" class="pd">
+                        <img src="../assets/Images/top5.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>APT</h2>
+                    <p>APT APT APT<br>Kissy face, kissy face sent to your phone, but<br>I'm trying to kiss your lips for real (uh-huh, uh-huh)</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">900$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>Rosie:我都叫Bruno Mars穿</div>
+            </div>
+
+            <div class="product-card" data-id="6">
+                <div class="product-image">
+                    <a href="product6.html" class="pd">
+                        <img src="../assets/Images/top6.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>吉了</h2>
+                    <p>明天要約會但衣櫃裡的衣服男友都看過嗎!<br>別吉緊張，我們這件「吉了」有現貨!<br>24小時送到，讓你美美出門</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">1000$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>影后:我急需衣服拍廣告的時候都買這一家!推推</div>
+            </div>
+        </div>
+    </div>
+
+    <!--下身-->
+    <div class="container1">
+        <h1 id="pi-2">"下身" 專區</h1>
+        <p class="description">JIYIKAWA 讓你穿出新高度！<br>從平凡哥布林到魅力滿分，一件上衣就能改變你的形象！<br>從手鋤頭」到「情書收不完」，JIYIKAWA 帶你實現穿搭夢想！</p>
+        <!--卡片區塊-->
+        <div class="product-grid">
+            <div class="product-card" data-id="7">
+                <div class="product-image">
+                    <a href="product7.html" class="pd">
+                        <img src="../assets/Images/bottom1.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>吉衣漢寶褲</h2>
+                    <p>漢堡褲讓你肚子餓的時候，<br>也不用去餐廳買。<br>口袋就可以保溫食物如麵包超人一樣!</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">1000$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>羊粑粑:商品超棒，我小孩就不會一直吵肚子餓了</div>
+            </div>
+            <!--卡片區塊-->
+            <div class="product-card" data-id="8">
+                <div class="product-image">
+                    <a href="product8.html" class="pd">
+                        <img src="../assets/Images/bottom2.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>吉衣炸蝦褲</h2>
+                    <p>炸蝦褲讓你肚子餓的時候，也不用去餐廳買甚至可以微波。<br>口袋就可以保溫食物如麵包超人一樣!<br>功能雷同漢堡褲，是更新款</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">1500$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>尖尖挖開乃:我根本不用買家電了!超級支持</div>
+            </div>
+
+            <div class="product-card" data-id="9">
+                <div class="product-image">
+                    <a href="product9.html" class="pd">
+                        <img src="../assets/Images/bottom3.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>棉花糖尿布</h2>
+                    <p>棉花糖尿布讓寶寶的肌膚享受最柔軟的呵護，<br>無論是日常活動還是長時間穿著，都能提供超級舒適感受！<br>精選高端面料，穿著舒適，質感一流。</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+               
+                </div>
+                <div class="price">900$</div>
+                <div class="tooltip">顧客評價:★★★☆☆<br>嗚嗚挖挖嗚挖:超級不推薦，每次穿上他就會忘記有穿</div>
+            </div>
+
+            <div class="product-card" data-id="10">
+                <div class="product-image">
+                    <a href="product10.html" class="pd">
+                        <img src="../assets/Images/bottom4.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>Emo紙袋裙</h2>
+                    <p>當你一個人的時候很孤單的時候，穿上紙袋裙，<br>讓自己在孤單的時刻，也能保持時尚與自在。<br>寬鬆的設計不管是居家還是外出，都能自由活動。</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">600$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>大I人:我都穿著它社交</div>
+            </div>
+
+            <div class="product-card" data-id="11">
+                <div class="product-image">
+                    <a href="product11.html" class="pd">
+                        <img src="../assets/Images/bottom5.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>雪花抱抱冰裙</h2>
+                    <p>雪花抱抱冰裙為紙材質能防止液體滲透並增加耐用度。<br>無毒無糖符合食品安全標準，適合冬天和夏天。<br>是環保型材質，不想穿也可以回收分解。</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">700$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>雪人:大家都稱讚我可愛</div>
+            </div>
+
+            <div class="product-card" data-id="12">
+                <div class="product-image">
+                    <a href="product12.html" class="pd">
+                        <img src="../assets/Images/bottom6.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>芋頭酥裙</h2>
+                    <p>想穿上經典的台灣小點心嗎？ 精選優質芋頭，材質經過細心蒸煮與打磨。<br>保留芋頭的天然顏色，搭配細緻的裝飾，保證每一細節都充滿心意與用心。</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">500$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>大甲芋頭:真的是芋頭本芋</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--商品區塊-->
+    <div class="container1">
+        <!--套裝區塊-->
+        <h1 id="pi-3">"套裝" 專區</h1>
+        <p class="description">JIYIKAWA "裝摩作羊" !<br>還在煩惱如何搭配衣服嗎？<br>套裝直接幫您搭配好！</p>
+        <!--卡片區塊-->
+        <div class="product-grid">
+            <div class="product-card" data-id="13">
+                <div class="product-image">
+                    <a href="product13.html" class="pd">
+                        <img src="../assets/Images/suit1.png" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>知識就是力量</h2>
+                    <p>期末...大家...還活著嗎?<br>活不下去就來點芝士，會過的....會過的吧?<br>會過的!!!!!!知識就是力量!!!</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">3000$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>芝士:穿上這套保證歐趴!!!</div>
+            </div>
+
+            <div class="product-card" data-id="14">
+                <div class="product-image">   
+                    <a href="product14.html" class="pd">
+                        <img src="../assets/Images/suit2.png" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>呷西八辣</h2>
+                    <p>西瓜很甜~<br>但是...!也能很辣!!!<br>高冷美女穿上這套，盡顯風韻。</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">250$</div>
+                <div class="tooltip">顧客評價:★★☆☆☆<br>線條小狗:穿上這套太辣了!</div>
+            </div>
+
+            <div class="product-card" data-id="15">
+                <div class="product-image">
+                    <a href="product15.html" class="pd">
+                        <img src="../assets/Images/suit3.png" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>紅衣大藍貓</h2>
+                    <p>別怕!不是紅衣小女孩~<br>是小八!!紅衣big小八!<br>但是我們沒有跟紅衣小女孩連動就是了。</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">2000$</div>
+                <div class="tooltip">顧客評價:★★★☆☆<br>紅衣小女孩:買這套可以COS我~</div>
+            </div>
+            
+            <div class="product-card" data-id="16">
+                <div class="product-image">
+                    <a href="product16.html" class="pd">
+                        <img src="../assets/Images/suit4.png" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>兔兔國王</h2>
+                    <p>烏薩奇表示:我是天子，平身。<br>王者兔兔，兔哥再現!<br>想當皇帝買這套就對了。</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">5200$</div>
+                <div class="tooltip">顧客評價:★★★★☆<br>皇后:這隻兔超可愛，買!</div>
+            </div>
+            
+            <div class="product-card" data-id="17">
+                <div class="product-image">
+                    <a href="product17.html" class="pd">
+                        <img src="../assets/Images/suit5.png" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>森八兔</h2>
+                    <p>森巴~森巴~森巴<br>森巴入侵計畫<br>全部給我穿上~</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">650$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>森巴:跳舞必備，絕了。</div>
+            </div>
+            
+            <div class="product-card" data-id="18">
+                <div class="product-image">
+                    <a href="product18.html" class="pd">
+                        <img src="../assets/Images/suit6.png" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>聖代絨絨</h2>
+                    <p>夏天必備清爽神器，穿上神清氣爽，直接涼涼~<br>兩顆冰淇淋球髮飾超級可愛!<br>穿上它你就是最甜的甜妹。</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">350$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>莓果果:我的天!!超可愛的哇賽賽。</div>
+            </div>
+
+        </div>
+    </div>
+    <!--配飾區塊-->
+    <div class="container1">
+        <h1 id="pi-4">"配飾" 專區</h1>
+        <p class="description">JIYIKAWA "潮吉時尚"系列推出啦！<br>想要跟上最新流行的搭配風格怎麼能少了精美的配飾呢？<br>來選擇最愛的款式吧！</p>
+
+        <div class="product-grid">
+            <div class="product-card" data-id="19">
+                <div class="product-image">
+                    <a href="product19.html" class="pd">
+                        <img src="../assets/Images/accessories1.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>花惹花</h2>
+                    <p>把每個萬花串起來製作而成的花惹花頭飾。<br>每製作一個頭飾，就有千千萬萬受到傷害的萬花。<br>小仙女必備~</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">120$</div>
+                <div class="tooltip">顧客評價:★★★★☆<br>萬花:要是顏色款式再多一點就好了。</div>
+            </div>
+
+            <div class="product-card" data-id="20">
+                <div class="product-image">
+                    <a href="product20.html" class="pd">
+                        <img src="../assets/Images/accessories2.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>五星上將手環</h2>
+                    <p>星星~星星~此星非彼星~<br>前有國王套，後有五星上將。<br>成為王者的第一步就是擁有吉衣的套裝與配飾!</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">80$</div>
+                <div class="tooltip">顧客評價:★★★☆☆<br>星星:?</div>
+            </div>
+            
+            <div class="product-card" data-id="21">
+                <div class="product-image">
+                    <a href="product21.html" class="pd">
+                        <img src="../assets/Images/accessories3.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>大強的王者墨鏡</h2>
+                    <p>小桃:?<br>大強:稱讚我!<br>戴上它你就是大強。</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">199$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>大強:戴上它你就是這條街最亮的仔。</div>
+            </div>
+
+            <div class="product-card" data-id="22">
+                <div class="product-image">
+                    <a href="product22.html" class="pd">
+                        <img src="../assets/Images/accessories4.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>速嘎水母耳環</h2>
+                    <p>為了守護海洋的水母<br>吉衣嚴選優質速嘎製作而成的耳環<br>雖然看起來很速嘎但它真的不速嘎。</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">200$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>水母:小桃戴上它真好看~</div>
+            </div>
+
+            <div class="product-card" data-id="23">
+                <div class="product-image">
+                    <a href="product23.html" class="pd">
+                        <img src="../assets/Images/accessories5.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>荷葉帽帽</h2>
+                    <p>下雨天必備!!<br>可愛又防水防曬，頂天荷葉自由放大縮小。<br>僅需50$即可帶走，性價比超高。</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">50$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>純陽:正宗荷葉帽。</div>
+            </div>
+
+            <div class="product-card" data-id="24">
+                <div class="product-image">
+                    <a href="product24.html" class="pd">
+                        <img src="../assets/Images/accessories6.jpg" alt="Product 1">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h2>草莓奶油蛋糕帽</h2>
+                    <p>甜妹最愛的甜甜奶油蛋糕，加上苗栗草莓莓，可愛又迷人。<br>甜甜軟軟的蛋糕保暖又舒適。<br>送給女朋友最好的禮物~</p>
+                    <div class="size-options">
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">加入購物車</button>
+                
+                </div>
+                <div class="price">280$</div>
+                <div class="tooltip">顧客評價:★★★★★<br>烏薩奇:我要吃。</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- 第一部分：選單連結 -->
+                <section class="footer-section footer-links">
+                    <a href="../pages/about-store.html" class="footer-link" target="_self">關於我們</a>
+                    <a href="../pages/about-store.html#policy" class="footer-link" target="_self">退換貨規則</a>
+                    <a href="../pages/about-store.html#policy" class="footer-link" target="_self">運費寄送</a>
+                    <a href="../pages/privacy.html" class="footer-link" target="_self">隱私權政策</a>
+                </section>
+                <!-- 第二部分：社群連結 -->
+                <section class="footer-section footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=100000895142823&locale=zh_TW" class="footer-social-link" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/fu_05_jie_18/" class="footer-social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="changfujie9@gmail.com" class="footer-social-link" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </section>
+                <!-- 第三部分：版權資訊 -->
+                <section class="footer-section footer-copyright">
+                    <span>&copy;2024 &nbsp;</span>
+                    <span>技術提供：吉衣卡哇</span>
+                </section>
+            </div>
+        </div>
+    </footer>      
+
+    <!-- 浮動按鈕 -->
+    <button class="float-btn-totop btn" id="btnToTop">
+        <div class="icon-btn"></div> 
+        <a href="#Classification">返回頂部</a>
+    </button>
+    <button class="float-btn-cart btn">
+        <div class="icon-btn"></div> 
+        <a href="cart.html" class="head">購物車</a>
+    </button>
+    
+    <div id="snow-container"></div>
+    <script src="../assets/js/snow.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/swiper.js"></script>
+    <script src="../assets/js/product interface.js"></script>
+    <script src="../assets/js/cart.js"></script>
+</body>
+</html>

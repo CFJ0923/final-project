@@ -1,0 +1,111 @@
+/* 全局樣式 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Intro Section */
+.intro-banner {
+    background: linear-gradient( rgb(255, 250, 241),  rgb(255, 250, 241)), url('banner-fashion.jpg') center/cover no-repeat;
+    color: brown;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.intro-banner h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.intro-banner p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.explore-btn {
+    padding: 12px 30px;
+    font-size: 1.2em;
+    color: rgb(255, 250, 241);
+    background-color: rgb(231, 198, 137);
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color:  wheat;
+    transform: scale(1.05);
+}
+
+/* Slogan Section */
+.slogan {
+    background-color:  rgb(255, 250, 241);;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 20px 0;
+    border-top: 4px solid brown;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slogan h1 {
+    font-family: 'DFKai-sb', serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+.slogan-text {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    color: #666;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Policy Section */
+.policy {
+    background-color: rgb(255, 250, 241);;
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-top: 4px solid #ff7f50;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.policy h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: brown;
+}
+
+.policy-section {
+    margin-bottom: 20px;
+    margin-left: 5cm;
+}
+
+.policy-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: brown;
+}
+
+.policy-section ul {
+    list-style-type: square;
+    margin-left: 20px;
+    line-height: 1.8em;
+}
+
+.policy-section ul li {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.policy-section p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    color: #555;
+}
